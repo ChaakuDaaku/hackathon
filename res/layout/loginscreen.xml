@@ -1,46 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_login"
-    android:orientation="vertical">
-
-    <RelativeLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_login"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/username"
+            android:layout_centerHorizontal="true"
             android:layout_marginBottom="134dp"
             android:text="@string/Welcome"
-            android:textSize="30dp"
-            android:layout_above="@+id/username"
-            android:layout_centerHorizontal="true" />
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="?android:attr/colorEdgeEffect"
+            android:textSize="50sp" />
 
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="194dp"
-            android:background="@android:color/transparent"
-            android:hint="@string/Username"
-            android:inputType="textPersonName"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/edittext_custom"
+        android:hint="@string/Username"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="?android:attr/colorEdgeEffect"
+        android:drawableStart="@drawable/username_icon"
+        android:drawableEnd="@color/white"/>
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="71dp"
-            android:background="@android:color/transparent"
-            android:ems="10"
-            android:hint="@string/Password"
-            android:inputType="textPassword"
-            android:layout_below="@+id/textView"
-            android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/edittext_custom"
+        android:ems="10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColor="?android:attr/colorEdgeEffect"
+        android:drawableStart="@drawable/password"
+        android:drawableEnd="@color/white"/>
 
         <Button
             android:id="@+id/signin_button"
@@ -52,17 +63,17 @@
             android:background="@drawable/button_custom"
             android:text="@string/Signin" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/signin_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:text="@string/Forgot"
-            android:textSize="20dp"
-            android:clickable="true"
-            android:onClick=""/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:onClick=""
+        android:text="@string/Forgot"
+        android:textColor="?android:attr/colorEdgeEffect"
+        android:textSize="20sp" />
 
     </RelativeLayout>
-</LinearLayout>
