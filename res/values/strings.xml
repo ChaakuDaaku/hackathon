@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MGNREGS Attendance</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Username">Enter your Username</string>
+    <string name="Password">Enter your Password</string>
+    <string name="Signin">Sign In</string>
+    <string name="Forgot">Forgot Password?</string>
+</resources>
